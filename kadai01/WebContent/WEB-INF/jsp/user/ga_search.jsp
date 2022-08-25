@@ -5,13 +5,169 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+    background-color: #FFE7FF;
+}
+h1{
+    text-align: center;
+    font-size: 90px;
+    margin: 0 auto;
+}
+.dis{
+	height:100vh;
+	width:100vw;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 22%;
+	width: 100%;
+    background-color: white;
+    padding:10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+	height: 78%;
+	width: 100%;
+	background-color: #FFE7FF;
+}
+.main a{
+    text-decoration: none;
+}
+.header p{
+    display        : inline-block;
+    color          : #ffffff;
+    letter-spacing : 4px;
+    text-shadow    :
+       2px  2px 1px #999999,
+      -2px  2px 1px #999999,
+       2px -2px 1px #999999,
+      -2px -2px 1px #999999,
+       2px  0px 1px #999999,
+       0px  2px 1px #999999,
+      -2px  0px 1px #999999,
+       0px -2px 1px #999999;
+    font-family: 'メイリオ';
+    font-size: 90px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.n{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 230px;
+    background-color: white;
+    text-align: center;
+    margin: 5% auto;
+}
+.button input{
+    font-size: 120px;
+}
+h1 {
+    display        : inline-block;
+    color          : #ffffff;
+    letter-spacing : 4px;
+    text-shadow    :
+       2px  2px 1px #999999,
+      -2px  2px 1px #999999,
+       2px -2px 1px #999999,
+      -2px -2px 1px #999999,
+       2px  0px 1px #999999,
+       0px  2px 1px #999999,
+      -2px  0px 1px #999999,
+       0px -2px 1px #999999;
+    font-family: 'メイリオ';
+    font-size: 70px;
+    margin: 0 auto;
+}
+
+.z {
+  display       : inline-block;
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 19px;   /* 余白       */
+  background    : #ffffff;     /* 背景色     */
+  color         : #999999;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #ffffff;    /* 枠の指定 */
+  border: 1px solid rgb(172, 171, 171);
+  border-top-left-radius:30px;
+  border-bottom-left-radius:30px;
+}
+
+.q {
+  display       : inline-block;
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 19px;   /* 余白       */
+  background    : #ffffff;     /* 背景色     */
+  color         : #999999;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #ffffff;    /* 枠の指定 */
+  border: 0.5px solid rgb(172, 171, 171);
+  border-top-right-radius:30px;
+  border-bottom-right-radius:30px;
+  width: 700px;
+}
+
+select{
+    border: 0.5px solid rgb(132, 133, 134);
+    width: 300px;
+    height: 70px;
+    font-size: 50px;
+
+}
+
+.ik {
+  display       : inline-block;
+  font-size     : 18pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 19px;   /* 余白       */
+  background    : #ffffff;     /* 背景色     */
+  color         : #999999;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  border        : 2px solid #ffffff;    /* 枠の指定 */
+  border: 0.5px solid rgb(172, 171, 171);
+  border-top-right-radius:30px;
+  border-bottom-right-radius:30px;
+  height: 70px;
+  width: 130px;
+}
+
+.ki{
+    padding       : 12px 19px;
+}
+</style>
 </head>
 <body>
-	<h1>企業検索</h1>
+    <div class="header">
+        <p>学生メニュー</p>
+    </div>
+    <div class="n">
+
 	<form action="">
-		<input type="submit" value="検索" name=gyo><input type=text name=name><br>
-        <select  name="select">
-        <option value="" selected hidden>業種</option>
+		<input type="submit"  value="検索" class="z"><input type=text name=name class="q" value="企業名"><br>
+    <div class="ki">
+        <select  name="select" class="vb">
+            <option value="" selected hidden>業種</option>
         <option value="in">インフラ</option>
         <option value="tu">通信</option>
         <option value="ka">開発</option>
@@ -19,7 +175,7 @@
         <option value="so">その他</option>
         </select>
         <select  name="select">
-            <option value="" selected hidden>地域</option>
+            <option value="in">都道府県</option>
             <option value="ho">北海道</option>
             <option value="ao">青森</option>
             <option value="iw">岩手</option>
@@ -68,7 +224,9 @@
             <option value="oc">沖縄</option>
 
             </select>
-           <input type="submit" value="検索"name=range>
+            <input type="submit" value="検索" class="ik">
 	</form>
+    </div>
+	</div>
 </body>
 </html>

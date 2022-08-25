@@ -25,7 +25,7 @@ public class ga_search extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher=
-				request.getRequestDispatcher("WEB-INF/jsp/ga_search.jsp");
+				request.getRequestDispatcher("WEB-INF/jsp/user/ga_search.jsp");
 		dispatcher.forward(request, response);
 	}
 
