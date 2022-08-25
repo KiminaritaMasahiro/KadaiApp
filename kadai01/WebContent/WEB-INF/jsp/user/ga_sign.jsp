@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>学生登録画面</title>
+</head>
+<body>
+	<div>
+		<h1>アカウント作成</h1>
+		<form action="" method="POST">
+			<h3>名前</h3>
+			<p><input type="text" name="name" placeholder="盛岡太郎"></p>
+			<h3>学年</h3>
+			<p><input type="text" name="gaku"></p>
+			<h3>学生ID</h3>
+			<p><input type="text" name="id" required></p>
+			<h3>パスワード</h3>
+			<p><input type="text" name="pass" required></p>
+			<br>
+			<input type="submit" value="確認">
+		</form>
+	</div>
+</body>
+</html>
