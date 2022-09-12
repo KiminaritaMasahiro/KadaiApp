@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>登録完了</title>
 </head>
 <body>
-
+	<h3>登録が完了しました。</h3>
+	<br><br>
+	<a href="/kadai01/top">トップ画面</a>
 </body>
 </html>

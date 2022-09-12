@@ -74,14 +74,11 @@ h1 {
 			<h1>学生メニュー</h1>
 		</div>
 		<div class="main">
-            <a href="">
                 <div class="button">
-                    <h1>検索表示</h1>
+                    <h1><a href="/kadai01/ga_search"> 検索表示</a></h1>
                 </div>
-            </a>
-            <a href="">
                 <div class="button">
-                    <h1>一覧表示</h1>
+                    <h1><a href="/kadai01/ga_list"> 検索表示</a></h1>
                 </div>
             </a>
 		</div>

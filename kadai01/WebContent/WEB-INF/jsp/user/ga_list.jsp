@@ -96,7 +96,7 @@ h1 , h2 {
 
 		<div class="header">
 			<h1>登録企業一覧</h1>
-            <a href="">
+            <a href="top">
                 <div class="menu">
                     <h2>メニューに戻る</h2>
                 </div>
