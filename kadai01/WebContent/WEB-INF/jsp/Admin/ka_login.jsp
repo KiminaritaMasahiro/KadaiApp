@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div>
-		<form action="javaに接続">
+		<form action="/kadai01/KLoginServlet" method="post">
 			<label>管理者ID</label>
 			<input type="text">
 
@@ -19,7 +19,7 @@
 
 		<h3>--新しい管理者ですか？--</h3>
 
-		<form action="ga_sign.jsp">
+		<form action="/kadai01/ka_sign">
 			<input type="submit"value="新規登録">
 		</form>
 	</div>

@@ -1,4 +1,4 @@
-package servlet;
+package servlet2;
 
 import java.io.IOException;
 
@@ -10,36 +10,33 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import model.LoginLogic;
-import scopedata.Login;
+import model2.KLoginLogic;
+import scopedata2.KLogin;
 
-/**
- * Servlet implementation class LoginServlet
- */
-@WebServlet("/LoginServlet")
-public class LoginServlet extends HttpServlet {
+@WebServlet("/KLoginServlet")
+public class KLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+;
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String path;
 		request.setCharacterEncoding("UTF-8");
 
-		String gaku_id =request.getParameter("gaku_id");
+		String ka_id =request.getParameter("ka_id");
 		String pass = request.getParameter("pass");
 		HttpSession session = request.getSession();
-		Login login = new Login(gaku_id,pass);
-		session.setAttribute("login",login);
+		KLogin Klogin = new KLogin(ka_id,pass);
+		session.setAttribute("Klogin",Klogin);
 
-		LoginLogic bo  =new LoginLogic();
-		boolean r = bo.execute(login);
-		if(r == true) {
-			path = "WEB-INF/jsp/user/ga_menu.jsp";
+		KLoginLogic bo  =new KLoginLogic();
+		boolean z = bo.execute(Klogin);
+		if(z == true) {
+			path = "WEB-INF/jsp/Admin/ka_menu.jsp";
 		}else{
-			path  ="WEB-INF/jsp/user/top.jsp";
+			path  ="WEB-INF/jsp/top.jsp";
 		}
 		RequestDispatcher dispatcher=
 				request.getRequestDispatcher(path);

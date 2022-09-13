@@ -78,7 +78,7 @@ h1 {
 				</div>
 			</form>
 
-			<form action="ka_login">
+			<form action="/kadai01/ka_login" method="get">
 				<div class="button">
 	            	<input type="submit" value="管理者">
 	            </div>

@@ -9,9 +9,7 @@
 <body>
 	<div>
 		<h1>アカウント作成</h1>
-		<form action="" method="POST">
-			<h3>名前</h3>
-			<p><input type="text" name="name" placeholder="盛岡太郎"></p>
+            <form action="/kadai01/KRegisterUser" method="post">
 			<h3>ID</h3>
 			<p><input type="text" name="id" required></p>
 			<h3>パスワード</h3>
