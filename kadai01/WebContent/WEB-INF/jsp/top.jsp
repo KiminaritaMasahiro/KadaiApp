@@ -66,6 +66,11 @@ h1 {
        0px -2px 1px #999999;
     font-family: 'メイリオ';
 }
+
+body {
+  background-image: url("/WEB-INF/jsp/image/image.jpg");
+  background-size: cover;
+}
 </style>
 </head>
 <body>
